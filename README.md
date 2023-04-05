@@ -37,8 +37,10 @@ def main()
 ```
 The main function mentioned above will be executed and calls other functions. The input .txt files in the directory will be read. The text from each file will be sent to the remaining 5 functions from the **main()** function.
 The text will be sent to each function. Spacy model **en_core_web_sm** is used. Each function will find the match from the entire text and replace it with Redact character. The redacting functions will return two variables.
+```
 1.Redacted text
 2.Redacted terms with their indexes.
+```
 These values are stored in the stats files.
 *The output video of the execution is stored in **Output docs** folder*
 
