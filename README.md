@@ -7,6 +7,8 @@ To run the code, Use the commands below in terminal or Visual Studio Code
 ```python
 pipenv --python 3.9  #use your version of python which is installed on your system. This code is also used to create a virtual environment
 pipenv install spacy #to install spacy library in virtual environment
+#to install spacy en_core_web_sm model in virtual environment
+pipenv install https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.4.1/en_core_web_sm-3.4.1-py3-none-any.whl
 pipenv install pytest #to install pytest library in virtual environment
 pipenv lock #to create piplock file
 ```
