@@ -119,7 +119,7 @@ def main(fileExtension, output_folder, stats, redactnames, redactdates, redactph
                 with open(output_file_name, 'w', encoding= 'utf-8') as output_file:
                     output_file.write(text)
 
-                #Stats file
+                #Creating and Adding the text file
                 if os.path.exists(os.path.join(stats, stats +'.txt')):
                     with open(os.path.join(stats, stats +'.txt'), 'a', encoding='utf-8') as f:
                         print('Redaction Statistics for file '+ file_name + ' :')
@@ -144,7 +144,7 @@ def main(fileExtension, output_folder, stats, redactnames, redactdates, redactph
                                 f.write(f'No of {term[0]} redacted are {term[1]}\n\n')
                                 #print(f'No of {term[0]} redacted is {term[1]}')
 
-
+#Using argparse to get the input on the command line
 if __name__ == '__main__':
         parser = argparse.ArgumentParser(description='Redact sensitive information from text files')
         parser.add_argument('--input', type=str, nargs='+',help='input file pattern', required=True)
