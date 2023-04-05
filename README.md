@@ -45,10 +45,10 @@ Using status method to print all the values in the nature field with their count
 
 ### Code Output
 The code output is stored in stored in stats file with name : **stderr.txt**. The stats file will have the terms redacted and their indexes and count of types of terms redacted.
-![image] = https://github.com/Pranavv361/cs5293sp23-project1/blob/main/Output%20docs/Stats%20file%20output.png
+![image](https://github.com/Pranavv361/cs5293sp23-project1/blob/main/Output%20docs/Stats%20file%20output.png)
 
 ### Test Output
-![image] = https://github.com/Pranavv361/cs5293sp23-project1/blob/main/Output%20docs/test.py%20output.png
+![image](https://github.com/Pranavv361/cs5293sp23-project1/blob/main/Output%20docs/test.py%20output.png)
 
 
 
