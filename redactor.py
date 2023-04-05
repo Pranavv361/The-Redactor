@@ -115,11 +115,11 @@ def main(fileExtension, output_folder, stats, redactnames, redactdates, redactph
                 #print(redacted_terms)
                 if not os.path.exists(output_folder):
                     os.makedirs(output_folder)
-                output_file_name = os.path.join(output_folder, os.path.splitext(os.path.basename(file_name))[0] + '.redacted')
+                output_file_name = os.path.join(output_folder, (file_name) + '.redacted')
                 with open(output_file_name, 'w', encoding= 'utf-8') as output_file:
                     output_file.write(text)
 
-                #Creating and Adding the text file
+                #Appending to the same stats .txt file
                 if os.path.exists(os.path.join(stats, stats +'.txt')):
                     with open(os.path.join(stats, stats +'.txt'), 'a', encoding='utf-8') as f:
                         print('Redaction Statistics for file '+ file_name + ' :')
@@ -131,6 +131,7 @@ def main(fileExtension, output_folder, stats, redactnames, redactdates, redactph
                             else:
                                 f.write(f'No of {term[0]} redacted are {term[1]}\n\n')
                                 #print(f'No of {term[0]} redacted is {term[1]}')
+                #Creating new stderr file to store stats
                 else:
                     os.makedirs(stats)
                     with open(os.path.join(stats, stats +'.txt'), 'w', encoding='utf-8') as f:
