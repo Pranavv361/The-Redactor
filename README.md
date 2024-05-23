@@ -1,4 +1,4 @@
-## cs5293sp23-project1 (Text - Analytics Project 1)
+## The Redactor
 ## Author - Pranav Vichare
 ## Project - The Redactor
 **About:**  In this project, Enron Email Dataset is used which has various emails in the form of text file. The dataset contains 1.7 Gb and more than 500,000 email messages. We have only considered 5 text files as sample data. The email has sensitive data which is to be redacted. The sensitive data is in terms of Names, Address, Gender, Dates and Phones. This sensitive data should be replaced by Redact character '█'. The redacted data should be stored with extension .redacted with original filenames. Stats files needs to be created which will contain all the data which is redacted and their indexes.
